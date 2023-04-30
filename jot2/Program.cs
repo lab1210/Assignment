@@ -1312,7 +1312,7 @@ class minmax
         }
     }
 }
-//Question 5: smallest
+//Question 5: 
 class small
 {
     public static int Smallest(int n)
@@ -1356,6 +1356,43 @@ class small
     }
 }
 //Question 5:Cluster Compression
+
+class cluster
+{
+    static int[] clustercompression(int[] n)
+    {
+        List<int> compressedList = new List<int>();
+        int currentNumber = n[0];
+        compressedList.Add(currentNumber);
+
+        for (int i = 1; i < n.Length; i++)
+        {
+            if (n[i] != currentNumber)
+            {
+                compressedList.Add(n[i]);
+                currentNumber = n[i];
+            }
+        }
+
+        return compressedList.ToArray();
+    }
+
+    static void Main()
+    {
+        Console.WriteLine("Size of array:");
+        int size = int.Parse(Console.ReadLine());
+        int[] a = new int[size];
+        Console.WriteLine("Array:");
+        for (int i = 0; i < size; i++)
+        {
+            a[i] = Convert.ToInt32(Console.ReadLine());
+        }
+        int[] result = clustercompression(a);
+        Console.WriteLine(string.Join(",", result));
+    }
+}
+
+
 //Question 5:rail road tie
 class road
 {
@@ -1435,6 +1472,41 @@ class road
     }
 }
 //Question 6: fullness
+class full
+{
+     static int fullnessquotient(int n)
+    {
+        int count = 0;
+        for (int i = 2; i <= 9; i++)
+        {
+            bool containsZero = false;
+            while (n > 0)
+            {
+                if (n % i == 0)
+                {
+                    containsZero = true;
+                    break;
+                }
+                n /= i;
+            }
+            if (!containsZero)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+    static void Main()
+    {
+        Console.WriteLine("Number:");
+        int N = int.Parse(Console.ReadLine());
+        int result = fullnessquotient(N);
+        Console.WriteLine(result);
+    }
+}
+
+
+
 //Question 6: packed
 class packed
 {
@@ -1498,11 +1570,127 @@ class packed
 }
 //Question 6: odd heavy
 
+class odd
+{
+    static int isOddHeavy(int[] arr)
+    {
+        int maxEven = int.MinValue;
+        bool hasOdd = false;
 
+        foreach (int num in arr)
+        {
+            if (num % 2 == 0)
+            {
+                if (num > maxEven)
+                {
+                    maxEven = num;
+                }
+            }
+            else
+            {
+                hasOdd = true;
+                if (num <= maxEven)
+                {
+                    return 0;
+                }
+            }
+        }
+
+        return hasOdd ? 1 : 0;
+    }
+static void Main()
+    {
+        Console.WriteLine("Enter the size of the array:");
+        int size = int.Parse(Console.ReadLine());
+
+        int[] arr = new int[size];
+        Console.WriteLine("Enter the array elements:");
+
+        for (int i = 0; i < size; i++)
+        {
+            arr[i] = int.Parse(Console.ReadLine());
+        }
+
+        int result = isOddHeavy(arr);
+        Console.WriteLine("Result: " + result);
+    }
+}
 
 //Question 7:121
 
-//Question 7:filterarray
+class is121
+{
+    public static int is121Array(int[] arr)
+    {
+        bool flag = true;
+        int ones = 0;
+        int twos = 0;
+
+        if (arr[0] != 1)
+        {
+            return 0;
+        }
+
+        if (arr[arr.Length - 1] != 1)
+        {
+            return 0;
+        }
+
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (arr[i] != 1 && arr[i] != 2)
+            {
+                return 0;
+            }
+
+            if (arr[i] == 1)
+            {
+                ones++;
+            }
+            else
+            {
+                twos++;
+            }
+
+           
+        }
+
+        if (ones == 0 )
+        {
+            return 0;
+        }
+
+        return 1;
+    }
+
+
+
+    static void Main()
+    {
+        Console.WriteLine("Size of array:");
+        int size = int.Parse(Console.ReadLine());
+        int[] a = new int[size];
+        Console.WriteLine(" Array:");
+        for (int i = 0; i < size; i++)
+        {
+            a[i] = Convert.ToInt32(Console.ReadLine());
+        }
+        int result = is121Array(a);
+        if (result == 1)
+        {
+            Console.WriteLine("121");
+        }
+        else
+        {
+            Console.WriteLine("Not 121");
+
+        }
+    }
+}
+
+
+
+
 //Question 8:Largest adjacent sum
 class adj
 {
@@ -1747,6 +1935,57 @@ class onion
         else
         {
             Console.WriteLine("Not Onion Array");
+        }
+    }
+}
+
+// Question 2:prime happy
+class happy
+{
+    public static int isPrimeHappy(int n)
+    {
+        int sum = 0;
+        int count = 0;
+        for (int i = 2; i < n; i++)
+        {
+            bool isPrime = true;
+            for (int j = 2; j <= Math.Sqrt(i); j++)
+            {
+                if (i % j == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime)
+            {
+                sum += i;
+                count++;
+            }
+        }
+        if (count == 0 || sum % n != 0)
+        {
+            return 0;
+        }
+        else
+        {
+            return 1;
+        }
+    }
+
+    static void Main()
+    {
+        Console.WriteLine("Number:");
+        int N = int.Parse(Console.ReadLine());
+        int result=isPrimeHappy(N);
+        if (result == 1)
+        {
+            Console.WriteLine("Prime Happy");
+        }
+        else
+        {
+            Console.WriteLine("Not Prime Happy");
+
         }
     }
 }
@@ -2204,7 +2443,13 @@ class pairs
         {
             Console.WriteLine("Not digit increasing");
 
+
         }
 
     }
 }*/
+
+
+
+
+
