@@ -1,0 +1,15 @@
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\bin\Debug\net6.0\jot2.exe
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\bin\Debug\net6.0\jot2.deps.json
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\bin\Debug\net6.0\jot2.runtimeconfig.json
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\bin\Debug\net6.0\jot2.dll
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\bin\Debug\net6.0\jot2.pdb
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\obj\Debug\net6.0\jot2.csproj.AssemblyReference.cache
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\obj\Debug\net6.0\jot2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\obj\Debug\net6.0\jot2.AssemblyInfoInputs.cache
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\obj\Debug\net6.0\jot2.AssemblyInfo.cs
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\obj\Debug\net6.0\jot2.csproj.CoreCompileInputs.cache
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\obj\Debug\net6.0\jot2.dll
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\obj\Debug\net6.0\refint\jot2.dll
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\obj\Debug\net6.0\jot2.pdb
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\obj\Debug\net6.0\jot2.genruntimeconfig.cache
+C:\Users\Omolabake oladeji\source\repos\jot2\jot2\obj\Debug\net6.0\ref\jot2.dll
