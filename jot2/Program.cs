@@ -1,4 +1,4 @@
-﻿/*//SAMPLE 1
+﻿//SAMPLE 1
 // Question 1 PrimeCount
 class Prime
 {
@@ -1474,7 +1474,7 @@ class road
 //Question 6: fullness
 class full
 {
-     static int fullnessquotient(int n)
+    static int fullnessquotient(int n)
     {
         int count = 0;
         for (int i = 2; i <= 9; i++)
@@ -1598,7 +1598,7 @@ class odd
 
         return hasOdd ? 1 : 0;
     }
-static void Main()
+    static void Main()
     {
         Console.WriteLine("Enter the size of the array:");
         int size = int.Parse(Console.ReadLine());
@@ -1652,10 +1652,10 @@ class is121
                 twos++;
             }
 
-           
+
         }
 
-        if (ones == 0 )
+        if (ones == 0)
         {
             return 0;
         }
@@ -1977,7 +1977,7 @@ class happy
     {
         Console.WriteLine("Number:");
         int N = int.Parse(Console.ReadLine());
-        int result=isPrimeHappy(N);
+        int result = isPrimeHappy(N);
         if (result == 1)
         {
             Console.WriteLine("Prime Happy");
@@ -2447,7 +2447,7 @@ class pairs
         }
 
     }
-}*/
+}
 
 
 
